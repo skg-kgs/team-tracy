@@ -1,0 +1,6 @@
+title: tests, and how to run them safely
+pid: f8f3baae-2038-449c-8206-b150bf934b08
+body: |2-
+  None are dedicated to logging. 'tests/elisp/test-skg-client.el' checks that the
+  unavailable-server message names server-to-user.log; 'bash/emacs-tests.sh' runs it
+  with no server. [[id:302fa5ad-d404-4bc2-861a-65742cb4aa1e][Tess]] (the tests) owns the harness.

@@ -1,0 +1,8 @@
+title: what is mine, and where my neighbours begin
+pid: d6a3fc5c-8128-47f0-9c39-a553fb6b1ee6
+body: |2-
+  Mine: 'server/main.rs:init_tracing', 'logs_dir' in 'server/types/misc.rs',
+  'elisp/skg-log.el', 'tools/introspect/profile-with-org-report/' (reads server.jsonl).
+  A span or warning in another module belongs to that module's owner.
+  [[id:dc140cc2-c990-4cfe-b171-5b61f9896139][Mario]] (scripts, configs, servers) owns the start and rerun scripts.
+  [[id:c1c373a8-06a5-4b13-9379-8e3eaed8efa3][Elle]] (the Emacs client) owns the messages that send a user to the logs.

@@ -1,0 +1,11 @@
+title: where each log is
+pid: a1de4fda-23c3-4e6e-bdb0-0fc63be1e948
+body: |2-
+  Each server run writes 'CONFIG.running/START/server-to-user.log' (CONFIG the
+  config path as given to the server, START the run's start time), and beside it
+  'server.jsonl' (one JSON object per event, for jq) when the config sets
+  'timing_log = true'. A config reload keeps the folder; each restart makes a new
+  one, so the newest is the current run. The start script writes
+  'CONFIG.running/start-servers.START.log'. The Emacs client logs only if
+  'skg-log-file' is set ('elisp/skg-log.el'). The skg-for-ai reader's daemon
+  writes 'DIR/skg-for-ai.log'. The folder 'logs/' at the repo root is stale.

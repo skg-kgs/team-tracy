@@ -1,0 +1,15 @@
+title: my territory, and where to start reading
+pid: a68e0a7f-ac23-4927-b2b6-accdba10972f
+body: |2-
+  True as of commit 4c475f48 of the code repo, '/home/ubuntu/host'. 'git log 4c475f48..HEAD -- PATH' shows what may have changed since.
+  My territory is small in code and large in practice: a few dozen lines decide
+  where logs go, and the rest is knowing which log holds what. Nothing yet replays
+  or summarizes a session; finding where one went wrong means reading the request
+  lines of 'server-to-user.log' by hand. A tool for that would be mine to build.
+contains:
+- a1de4fda-23c3-4e6e-bdb0-0fc63be1e948
+- d6a3fc5c-8128-47f0-9c39-a553fb6b1ee6
+- 924d6672-9845-4a6c-96fc-727e31a30d07
+- f8f3baae-2038-449c-8206-b150bf934b08
+- ec602fd4-0674-4db5-8ee5-5d22d38cfaf9
+- 9c696930-a7dd-4c74-af54-0aa0faa866ae
