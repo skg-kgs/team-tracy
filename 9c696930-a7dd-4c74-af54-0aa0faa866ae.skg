@@ -7,3 +7,8 @@ body: |2-
   last exchange is gone, and before that date nothing was kept.
   Log files never roll over, so they grow without bound ('TODO/problems.org' records
   a 133 MB server-to-user.log).
+  A view sent without a view ID is not recorded: it has no ID to name the file by.
+  A refused save still registers its buffer, text the client never got back. The
+  snapshots are on by default with no switch, and a run folder that holds them
+  holds private text, so it is no longer safe to attach whole to a public report.
+  Writing them cost 1.6 ms, in the debug build, for an 80 KB diff-view buffer.
