@@ -2,6 +2,8 @@ title: what is mine, and where my neighbours begin
 pid: d6a3fc5c-8128-47f0-9c39-a553fb6b1ee6
 body: |2-
   Mine: 'server/main.rs:init_tracing', 'logs_dir' in 'server/types/misc.rs',
+  'server/view_snapshots.rs' (and its two calls in 'server/types/views_state.rs'
+  and one in 'server/serve/handlers/save_buffer.rs', in Drew's and Elle's files),
   'elisp/skg-log.el', 'tools/introspect/profile-with-org-report/' (reads server.jsonl).
   A span or warning in another module belongs to that module's owner.
   [[id:dc140cc2-c990-4cfe-b171-5b61f9896139][Mario]] (scripts, configs, servers) owns the start and rerun scripts.

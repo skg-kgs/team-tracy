@@ -1,0 +1,15 @@
+title: In 'server-to-user.log', a session is request header lines among span timings.
+pid: 704fd3a1-7c1e-4ffa-b410-7a70aa4adc4a
+body: |2-
+  - Drop "link statuses" first: the client sends a burst after every render.
+    'grep "Received request" | grep -v "link statuses"' leaves the session.
+  - Opening the diff view is four "diff view" requests, one per buffer, each with
+    its view-id; the client closes the empty ones at once.
+  - A save names its view-id, and '(diff-view-buffer . ...)' when it saves a buffer
+    of the diff view. Its spans say whether it wrote files ("wrote N file(s)") and
+    which other views it rerendered ("save preparation selected N collateral view(s)").
+  - "reloaded .skg files that changed on disk ... nodes=N" is a change from outside
+    the connection (a teammate, an editor, git). It does not name the files; find
+    them by mtime. The client answers it with "rerender all views".
+  - What a buffer held is in 'views/' of the run folder: VIEW.sent.org and
+    VIEW.received.org, the last exchange only. Before 2026-11-13, nowhere.

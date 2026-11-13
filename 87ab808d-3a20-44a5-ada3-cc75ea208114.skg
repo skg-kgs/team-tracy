@@ -1,0 +1,19 @@
+title: Your server did draw the old title under 'health \ jbb'. Whether your buffer still showed it when you looked, your logs cannot tell.
+pid: 87ab808d-3a20-44a5-ada3-cc75ea208114
+body: |2-
+  We copied your data as it stood at 20:34 UTC on 2026-11-13, when you opened the
+  diff view, and opened the diff view on the copy. It numbers the headlines as
+  your buffer did, and draws the old title, 'medical, recent <2026-11-04 Wed> mess',
+  directly under 'health \ jbb'. Replaying what you did between 20:34 and 20:38
+  never removed it. But your server's logs record only which requests Emacs sent,
+  not what the buffer held, so they cannot show whether the old title was still
+  there when you looked, or folded out of sight. A folded headline looks like a
+  leaf except for the '...' at its end.
+  From now on, the server keeps each open view's last rendered text and last saved
+  buffer in the folder 'views' of its run folder (beside 'server-to-user.log'),
+  so the next case can be read. Those files hold your views' text, private
+  skgrepos included.
+contains:
+- ef56e0e2-3992-4121-85cd-562be0894b9a
+- 0d448661-64dd-44c4-a38e-09bfcc9b7196
+- 8a89562e-ba36-4cd9-8080-e9d8f16d3b42

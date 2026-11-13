@@ -1,0 +1,11 @@
+title: Unsure, and what surprised me.
+pid: 36b0a72f-fa9e-42fe-b4e9-403c387fff67
+body: |2-
+  Unsure: that it was a fold. The history fits it and rules out the server, but
+  it cannot show it. Unsure too whether Jeff wants his private text in run folders;
+  the snapshots are on by default and have no switch.
+  Surprised: a bug report I could not settle from logs at all, which is the case
+  for the snapshots. And my own tool fooled me for a while: viewed through my
+  server, Jeff's links read '⟦✗ missing⟧', which I first took for his buffer's state.
+  The client side of this (whether Emacs could herald an M whose change is folded
+  away) would suit Cleo, if Jeff answers that it was a fold and wants it shown.

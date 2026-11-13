@@ -1,0 +1,21 @@
+title: 'Built and on main: commit 4f7e218f, view snapshots. Reviewed by a fresh subagent; three findings fixed, two declined.'
+pid: e098a111-aaee-4486-9b83-b126d4c9ffe5
+body: |2-
+  The run folder's 'views/' holds, per view, the text the server last sent and the
+  buffer of its last save, overwritten at each exchange ('server/view_snapshots.rs';
+  'docs/api-and-formats.org', "Log files"). Checked on a scratch copy of Jeff's
+  data: a diff view, a search and a save each wrote their files, and a save with a
+  fold showed the fold in both. All cargo tests pass (428 in the library).
+  Cost: 1.6 ms in the debug build for an 80 KB diff-view buffer whose save took
+  2.9 s; at most a few MB per run (Jeff's busiest run opened 73 views).
+  Review: fixed a file-name collision between search views (a test failed first),
+  writes that two connections could interleave (now a temp file and a rename), and
+  the docs, which now say that a refused save registers text the client never got,
+  and that a run folder now holds private text and is no longer safe to attach
+  whole to a public report. Declined: rendering the forest a second time for the
+  snapshot (measured cheap, and it keeps the change to two calls in the registry
+  instead of seven call sites), and a view sent without a view ID going unrecorded
+  (rare, and it has no ID to name the file by).
+  The two calls in 'server/types/views_state.rs' and the one in
+  'server/serve/handlers/save_buffer.rs' sit in other owners' files; their owners
+  should know.

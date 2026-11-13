@@ -3,6 +3,7 @@ pid: 924d6672-9845-4a6c-96fc-727e31a30d07
 body: |2-
   'server/main.rs:init_tracing' (its doc comment is the map)
   'server/types/misc.rs:logs_dir'
+  'server/view_snapshots.rs' (its module comment)
   'server/serve.rs:handle_emacs' (the one "Received request" line per request)
   'elisp/skg-log.el:skg-log'
   'elisp/skg-client.el:skg--run-folder-for-messages'

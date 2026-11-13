@@ -5,7 +5,8 @@ body: |2-
   My territory is small in code and large in practice: a few dozen lines decide
   where logs go, and the rest is knowing which log holds what. Nothing yet replays
   or summarizes a session; finding where one went wrong means reading the request
-  lines of 'server-to-user.log' by hand. A tool for that would be mine to build.
+  lines of 'server-to-user.log' by hand, as the sibling note "A session is read
+  from its run folder's request lines ..." says. A tool for that would be mine to build.
 contains:
 - a1de4fda-23c3-4e6e-bdb0-0fc63be1e948
 - d6a3fc5c-8128-47f0-9c39-a553fb6b1ee6

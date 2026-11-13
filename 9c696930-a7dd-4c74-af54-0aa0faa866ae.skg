@@ -1,6 +1,9 @@
-title: A log shows what was asked, not what was answered.
+title: A log shows what was asked; only the view snapshots show a buffer, and only its last exchange.
 pid: 9c696930-a7dd-4c74-af54-0aa0faa866ae
 body: |2-
   Only each request's header line is logged, not the response or the saved buffer.
+  Since 2026-11-13 the run folder's 'views/' keeps each view's last sent text and
+  last saved buffer; each exchange overwrites them, so what a buffer held before its
+  last exchange is gone, and before that date nothing was kept.
   Log files never roll over, so they grow without bound ('TODO/problems.org' records
   a 133 MB server-to-user.log).
