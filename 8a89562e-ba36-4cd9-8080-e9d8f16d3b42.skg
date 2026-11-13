@@ -1,4 +1,4 @@
-title: '? Should the server keep your views'' text in its run folder at all?'
+title: '? Should the server keep your views'' text in the folder beside server-to-user.log at all?'
 pid: 8a89562e-ba36-4cd9-8080-e9d8f16d3b42
 body: |2-
   It is on by default, with no switch, and the files are never deleted, so they

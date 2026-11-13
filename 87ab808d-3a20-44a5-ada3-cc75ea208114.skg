@@ -1,9 +1,9 @@
 title: Your server did draw the old title under 'health \ jbb'. Whether your buffer still showed it when you looked, your logs cannot tell.
 pid: 87ab808d-3a20-44a5-ada3-cc75ea208114
 body: |2-
-  We copied your data as it stood at 20:34 UTC on 2026-11-13, when you opened the
-  diff view, and opened the diff view on the copy. It numbers the headlines as
-  your buffer did, and draws the old title, 'medical, recent <2026-11-04 Wed> mess',
+  Tracy copied your data as it stood at 20:34 UTC on 2026-11-13, when you opened the
+  diff view, and opened the diff view on the copy. It gives the headlines the same numbers as in
+  your example (the 'vnid 4l' of 'health \ jbb'), and draws the old title, 'medical, recent <2026-11-04 Wed> mess',
   directly under 'health \ jbb'. Replaying what you did between 20:34 and 20:38
   never removed it. But your server's logs record only which requests Emacs sent,
   not what the buffer held, so they cannot show whether the old title was still
