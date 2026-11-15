@@ -1,7 +1,0 @@
-title: A running server's peak memory is VmHWM in '/proc/PID/status', and what it has swapped out is VmSwap beside it.
-pid: 022b6d8a-6c6a-4e19-a5e3-bdf038ae20bb
-body: |2-
-  Jeff's server, read this way and never connected to, held 962 MB
-  resident and 277 MB swapped, a peak of 1.27 GB, after 19 hours. Its
-  CPU time so far is fields 14 and 15 of '/proc/PID/stat', in ticks of
-  1/100 s: 580 s in those 19 hours.

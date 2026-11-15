@@ -1,7 +1,0 @@
-title: '? If you meet a purple M with no old title under it again, will you tell Top before you save or reopen that buffer?'
-pid: 0d448661-64dd-44c4-a38e-09bfcc9b7196
-body: |2-
-  The server keeps only the last exchange of each view, so the next save of that
-  buffer replaces the copy that would show what you saw. Closing the buffer keeps
-  the copy, if you close it without saving. If you do not answer, Top will read whatever the folder holds when your
-  report arrives.
