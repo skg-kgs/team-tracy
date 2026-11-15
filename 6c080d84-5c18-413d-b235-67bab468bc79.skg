@@ -1,0 +1,6 @@
+title: '"Free" memory is always low here; the floor to watch is MemAvailable.'
+pid: 6c080d84-5c18-413d-b235-67bab468bc79
+body: |2-
+  The page cache fills what is free: at rest 'free' showed 0.9 GB of
+  16 while 8.4 GB were available. A rule like "stop under 1 GB free"
+  would stop everything; read it as available.

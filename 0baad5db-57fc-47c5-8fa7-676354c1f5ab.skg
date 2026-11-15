@@ -1,0 +1,8 @@
+title: To stand in for a small rented machine, pin the run to this laptop's efficiency cores.
+pid: 0baad5db-57fc-47c5-8fa7-676354c1f5ab
+body: |2-
+  CPUs 0 to 7 are four fast cores with two threads each (4.7 GHz);
+  8 to 15 are eight efficiency cores (3.5 GHz). 'taskset -c 8-11' gives
+  four of them, nearer a rented vCPU than a fast core is. Set
+  CARGO_TARGET_DIR to a scratch folder to build from cold without
+  touching 'target/'; a cold debug build there takes 6 GB.

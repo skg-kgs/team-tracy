@@ -1,0 +1,6 @@
+title: Trust a run's mean cores, from rusage, over its sampled peak.
+pid: 5fae791c-b9e8-4e83-ab93-941654e33ed3
+body: |2-
+  A process shorter than the half-second sampling is missed: nextest
+  runs each test as its own process, so the sampled peak read 1.1 cores
+  for a run whose mean was 1.7.

@@ -1,0 +1,17 @@
+title: A run is measured through its process group in /proc, and a running server's memory is read there too, without connecting to it.
+pid: 8778c497-6b5c-49d9-bba2-fa8bc7ced8b1
+body: |2-
+  Learned 2026-11-15, measuring what this machine uses, to answer Jeff's
+  question of the least machine to rent: [[id:71fea003-732f-4c14-ac71-b98bc05de105][the answer]].
+  'tools/introspect/machine-measures/measure_run.py' (built then, not
+  yet committed) runs one command in a session of its own, samples
+  every half second the summed memory of every process in that session
+  and the machine's MemAvailable, takes the CPU time from the reaped
+  children's rusage, and kills the run if MemAvailable falls under 1 GiB.
+  Its docstring says what it misses. Measure one thing at a time: Jeff
+  works on this machine, and two runs would each slow the other.
+contains:
+- 6c080d84-5c18-413d-b235-67bab468bc79
+- 022b6d8a-6c6a-4e19-a5e3-bdf038ae20bb
+- 5fae791c-b9e8-4e83-ab93-941654e33ed3
+- 0baad5db-57fc-47c5-8fa7-676354c1f5ab
